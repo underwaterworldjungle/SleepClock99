@@ -24,13 +24,13 @@ int main(void)
 	if(secs>59){secs=59;}
 	
 	system("cls");
-	printf("\nHours:'%i' \tMinutes:'%i' \tSeconds:'%i' ",hours,mins,secs);
+	printf("\nHours: %i \tMinutes: %i \tSeconds: %i ",hours,mins,secs);
 	
 	printf("\n\nSleeping...\n\n");
 	
 	do
 	{
-		printf("\rHours:'%i' \tMinutes:'%i' \tSeconds:'%i' \t sleep remaining.",hours,mins,secs);
+		printf("\rHours: %i \tMinutes: %i \tSeconds: %i \t sleep remaining.",hours,mins,secs);
 		sleep(1);
 		
 		if((secs==0 && mins!=0))
@@ -45,6 +45,7 @@ int main(void)
 	
 	system("cls");
 	printf("\a\nYou awaken.");
+	sleep(2);
 	printf("\n\nPress any key to quit.");
 	getch();
 	
