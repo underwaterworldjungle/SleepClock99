@@ -35,8 +35,6 @@ int main(void)
 		
 		if((secs==0 && mins!=0))
 		{mins=mins-1;secs=59;}
-		//else if(!(secs=0 && mins!=0))
-		//{secs=secs-1;}
 		else if(!(secs==0))
 		{secs=secs-1;}
 		
