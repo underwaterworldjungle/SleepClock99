@@ -37,9 +37,8 @@ int main(void)
 		{mins=mins-1;secs=59;}
 		else if(!(secs==0))
 		{secs=secs-1;}
-		
-		if((mins==0 && hours!=0))
-		{hours=hours-1;mins=59;}
+		else if((mins==0 && hours!=0 && secs==0))
+		{hours=hours-1;mins=59;secs=59;}
 	}
 	while(!(secs==0 && mins==0 && hours==0));
 	
